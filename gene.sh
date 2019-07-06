@@ -4,9 +4,9 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-export PATH=${PWD}:$PATH
 export FABRIC_CFG_PATH=${PWD}
-
+export PATH=${PWD}:$PATH
+echo $FABRIC_CFG_PATH
 configtxgen -profile OneOrgOrdererGenesis -outputBlock ./config/genesis.block
 if [ "$?" -ne 0 ]; then
   echo "Failed to generate orderer genesis block..."
