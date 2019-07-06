@@ -22,7 +22,7 @@ Organizations:
         # ID to load the MSP definition as
         ID: OrgMSP
 
-        MSPDir: orgmsp
+        MSPDir: orgmsp/msp
 
         AnchorPeers:
             # AnchorPeers defines the location of peers which can be used
