@@ -7,6 +7,7 @@
 export FABRIC_CFG_PATH=${PWD}
 export PATH=${PWD}:$PATH
 echo $FABRIC_CFG_PATH
+CHANNEL_NAME=mychannel
 # generate channel configuration transaction
 configtxgen -profile OneOrgChannel -outputCreateChannelTx ./config/channel.tx -channelID $CHANNEL_NAME
 if [ "$?" -ne 0 ]; then
