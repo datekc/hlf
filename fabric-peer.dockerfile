@@ -6,6 +6,7 @@ FROM yeasy/hyperledger-fabric-base:release-v1.4
 LABEL maintainer "Baohua Yang <yeasy.github.com>"
 
 EXPOSE 7051
+EXPOSE 7053
 # ENV CORE_PEER_MSPCONFIGPATH $FABRIC_CFG_PATH/msp
 RUN mkdir -p $FABRIC_CFG_PATH /etc/hyperledger/fabric/peer /etc/hyperledger/fabric/peer/msp
 
